@@ -1,0 +1,298 @@
+plugins:
+  group:server:
+    server:xmkoto:
+      port: 5140
+      maxPort: 5149
+      host: 0.0.0.0
+    ~server-satori:kli5u3: {}
+  group:basic:
+    ~admin:wvu2gj: {}
+    ~bind:dkyo3w: {}
+    commands:t1arsr:
+      emojihub-bili:
+        name: /emojihub
+        aliases:
+          emojihub: null
+      plugin:
+        config:
+          hidden: true
+      timer:
+        config:
+          hidden: true
+      usage:
+        config:
+          hidden: true
+      status:
+        name: /状态
+        aliases:
+          状态: null
+      feedback:
+        name: /反馈
+        aliases:
+          反馈: null
+      changeauth:
+        config:
+          hidden: true
+      command:
+        config:
+          hidden: true
+      jryspro:
+        name: /今日运势
+      thursday:
+        aliases:
+          星期四: null
+    help:pxxqza: {}
+    http:v6w6p7: {}
+    inspect:fn6c0n: {}
+    locales:6hp1is: {}
+    proxy-agent:p9ovws: {}
+    telemetry:jll4u5: {}
+  group:console:
+    actions:9bhtjw: {}
+    analytics:c088x9: {}
+    android:2nkuij:
+      $if: env.KOISHI_AGENT?.includes('Android')
+    ~auth:v5l8kv: {}
+    config:f520ga: {}
+    console:sjmnt9:
+      open: true
+    dataview:5hc4yj: {}
+    desktop:iskcmx:
+      $if: env.KOISHI_AGENT?.includes('Desktop')
+    explorer:i5740v: {}
+    logger:g7i17o: {}
+    insight:4qyu9u: {}
+    market:kg2mow:
+      search:
+        endpoint: https://registry.koishi.chat/index.json
+    notifier:dw26x1: {}
+    oobe:42108n: {}
+    status:yreexp: {}
+    theme-vanilla:vehmjs: {}
+  group:storage:
+    database-sqlite:dd11hp:
+      path: data/koishi.db
+    assets-local:slwdqk: {}
+  group:adapter:
+    adapter-qq:c312vz:
+      id: '102132149'
+      token: XFiQ2Le4GZbCyG5D6SbDerhTt20v9A8U
+      type: private
+      secret: wneVMD5xphZRJC5yrkdWQKE82wqlgbWR
+      intents:
+        - DIRECT_MESSAGES
+        - USER_MESSAGE
+        - MESSAGE_AUDIT
+        - PUBLIC_GUILD_MESSAGES
+  group:develop:
+    $if: env.NODE_ENV === 'development'
+    hmr:rys16w:
+      root: .
+  adapter-onebot:zogb59:
+    selfId: '568210745'
+    token: zhouyinqi753303
+  puppeteer:locshl:
+    ignoreHTTPSErrors: true
+  feedback:kpna86:
+    receivers:
+      - platform: onebot
+        selfId: '568210745'
+        channelId: '904477735'
+        guildId: '904477735'
+  '@ifrank/xibao:jx8y49': {}
+  ba-plugin:buxwpt:
+    plugin_config:
+      draw_modle: puppeteer
+      auto_update: false
+    qqconfig:
+      markdown_setting:
+        qqguild: ''
+  emojihub-bili:nzvjhy:
+    MDswitch: true
+    QQchannelId: '655158398'
+    MoreEmojiHub:
+      - command: 随机emojihub表情包
+        source_url: 注意!请勿修改此处内容。左边的指令可以修改。此项内容严禁填写TXT文件的路径。
+      - command: 2233娘小剧场表情包
+        source_url: >-
+          E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\2233娘小剧场.txt
+      - command: acomu414表情包
+        source_url: >-
+          E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\acomu414.txt
+      - command: ba表情包
+        source_url: E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\ba.txt
+      - command: capoo表情包
+        source_url: E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\capoo.txt
+      - command: chiikawa表情包
+        source_url: >-
+          E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\chiikawa.txt
+      - command: downvote表情包
+        source_url: >-
+          E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\Downvote.txt
+      - command: doro表情包
+        source_url: E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\doro.txt
+      - command: eveonecat表情包
+        source_url: >-
+          E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\eveonecat.txt
+      - command: fufu表情包
+        source_url: E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\fufu.txt
+      - command: girlsbandcry
+        source_url: >-
+          E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\GirlsBandCry.txt
+      - command: kemomimi表情包
+        source_url: >-
+          E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\kemomimi酱表情包.txt
+      - command: koishi-meme表情包
+        source_url: >-
+          E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\koimeme.txt
+      - command: mygo表情包
+        source_url: E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\mygo.txt
+      - command: seseren表情包
+        source_url: >-
+          E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\seseren.txt
+      - command: 阿夸表情包
+        source_url: E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\阿夸.txt
+      - command: 阿尼亚表情包
+        source_url: E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\阿尼亚.txt
+      - command: 白圣女表情包
+        source_url: E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\白圣女.txt
+      - command: 白圣女漫画表情包
+        source_url: E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\白圣女黑白.txt
+      - command: 柴郡表情包
+        source_url: E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\柴郡.txt
+      - command: 甘城猫猫表情包
+        source_url: E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\甘城猫猫.txt
+      - command: 孤独摇滚表情包
+        source_url: E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\孤独摇滚.txt
+      - command: 狗妈表情包
+        source_url: E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\狗妈.txt
+      - command: 滑稽表情包
+        source_url: E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\滑稽.txt
+      - command: 疾旋鼬表情包
+        source_url: E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\疾旋鼬.txt
+      - command: 流萤表情包
+        source_url: E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\流萤.txt
+      - command: 龙图表情包
+        source_url: E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\龙图.txt
+      - command: 小c表情包
+        source_url: E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\蜜汁工坊.txt
+      - command: 男娘武器库表情包
+        source_url: E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\男娘武器库.txt
+      - command: 千恋万花表情包
+        source_url: E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\0721.txt
+      - command: 赛马娘表情包
+        source_url: E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\赛马娘.txt
+      - command: 瑟莉亚表情包
+        source_url: E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\瑟莉亚.txt
+      - command: 小黑子表情包
+        source_url: E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\小黑子.txt
+      - command: 心海表情包
+        source_url: E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\心海.txt
+      - command: 绪山真寻表情包
+        source_url: E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\绪山真寻.txt
+      - command: 亚托莉表情包
+        source_url: >-
+          E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\亚托莉表情包.txt
+      - command: 永雏小菲表情包
+        source_url: E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\永雏小菲.txt
+      - command: 宇佐紀表情包
+        source_url: E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\宇佐紀.txt
+      - command: ba
+        source_url: E:\ba
+      - command: 火车头
+        source_url: E:\火车头
+      - command: 猫猫虫
+        source_url: E:\猫猫虫
+    groupListmapping: []
+  change-auth-callme:zureaw: {}
+  waifu:tzre3s:
+    avoidNtr: true
+  cache-database:o0cqml: {}
+  music-downloadvoice-api:27a6qj:
+    imageMode: true
+    menuExitCommandTip: true
+    recall: false
+  open-vits:xqe6hl:
+    defaultEngine: GPT-SOVITS
+    endpoint: http://127.0.0.1:23456
+    lang: auto
+    reference_audio: E:\bot\man\0051.wav
+    prompt_text: アリスの中に何かがプログラミングされました
+    speech_length: 2
+    recall_time: 10000
+    max_length: 11451419191810
+  chatluna-azure-openai-adapter:gb6nuf:
+    apiKeys:
+      - - 0fc35b9dfcee4a9d9b171e50df47c3d3
+        - https://ecomter-ailocate.openai.azure.com
+    supportModels:
+      - model: eringai
+        modelVersion: 2024-03-01-preview
+    temperature: 0
+  bilibili-videolink-analysis:flsmem: {}
+  bilibili-login:t4lf3z: {}
+  bilibili-notify:eod77w:
+    key: 9b8db7ae562b9864efefe06289cc5530
+    master:
+      masterAccount: '2338680148'
+    unlockSubLimits: true
+    dynamicUrl: true
+    changeMasterInfoApi: true
+  markdown:wdigrk: {}
+  better-custom-welcome-message:6fn3hj:
+    custom_welcome_messages:
+      - '{at}欢迎{user}  {avatar}加入{group}家庭，file://E:\新建文件夹 当前群组人数{group_count}'
+      - '{at}哇! 又有新的成员{user} {avater}加入了 #{group}家庭 file://E:\新建文件夹 \我怎么知道.JPG'
+    custom_leave_messages:
+      - 呜呜~~ {user} {avater}离开了家庭 当前群组人数{group_count}
+  crazy-thursday:ed7adk: {}
+  roulette:tkr33m: {}
+  ~chatluna:jluc9p:
+    defaultModel: azure/eringai
+    defaultPreset: 星野
+    botName: 星野
+    isReplyWithAt: true
+    privateChatWithoutCommand: false
+    messageCount: 38
+    randomReplyFrequency: 0.06
+    errorTemplate: 呜呜 ，星野反应不过来了，请联系2338680148以寻求帮助吧
+  ~novelai:hyhl0h:
+    type: sd-webui
+    endpoint: https://sd2.eryc-niceone.cn:30443/
+    model: CharHelper
+    scale: 30
+    textSteps: 20
+    maxWords: 30
+    maxResolution: 512
+    imageSteps: 20
+    maxSteps: 20
+    sampler: k_dpmpp_2m_ka
+    upscaler: None
+    features:
+      upscale: false
+      image: false
+    hiresFix: true
+  jryspro:k12juq:
+    nightauto: false
+    imgApi: E:\ba\
+    subimgApi: E:\ba\
+    waiting: false
+  silk:zsbhv4: {}
+  ffmpeg:jfosna: {}
+  downloads:i3936k: {}
+  maimai:atldj0:
+    lxns:
+      token: kXo0cS0KqGpZcDO0PwCxH7R8wPad79ll1XB8rFOOmIE
+    quester:
+      keepAlive: true
+    divingFish:
+      token: FXiA4ONnUdehcMg6WlkBR9HTo0tfPxaj
+    preferred: df
+  mc-server-status:j5yia7:
+    IP: itdct.com:9097
+    footer: |-
+      Powerd By HongXingOS4
+      延迟可能有所偏差，该计算通过Azure。
+prefix:
+  - ''
+  - /
