@@ -3,7 +3,7 @@ plugins:
     server:xmkoto:
       port: 5140
       maxPort: 5149
-      host: 0.0.0.0
+      host: 127.0.0.1
     ~server-satori:kli5u3: {}
   group:basic:
     ~admin:wvu2gj: {}
@@ -197,12 +197,6 @@ plugins:
         source_url: E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\永雏小菲.txt
       - command: 宇佐紀表情包
         source_url: E:\bot\man\node_modules\koishi-plugin-emojihub-bili\lib\txts\宇佐紀.txt
-      - command: ba
-        source_url: E:\ba
-      - command: 火车头
-        source_url: E:\火车头
-      - command: 猫猫虫
-        source_url: E:\猫猫虫
     groupListmapping: []
   change-auth-callme:zureaw: {}
   waifu:tzre3s:
@@ -212,87 +206,15 @@ plugins:
     imageMode: true
     menuExitCommandTip: true
     recall: false
-  open-vits:xqe6hl:
-    defaultEngine: GPT-SOVITS
-    endpoint: http://127.0.0.1:23456
-    lang: auto
-    reference_audio: E:\bot\man\0051.wav
-    prompt_text: アリスの中に何かがプログラミングされました
-    speech_length: 2
-    recall_time: 10000
-    max_length: 11451419191810
-  chatluna-azure-openai-adapter:gb6nuf:
-    apiKeys:
-      - - 0fc35b9dfcee4a9d9b171e50df47c3d3
-        - https://ecomter-ailocate.openai.azure.com
-    supportModels:
-      - model: eringai
-        modelVersion: 2024-03-01-preview
-    temperature: 0
-  bilibili-videolink-analysis:flsmem: {}
-  bilibili-login:t4lf3z: {}
-  bilibili-notify:eod77w:
-    key: 9b8db7ae562b9864efefe06289cc5530
-    master:
-      masterAccount: '2338680148'
-    unlockSubLimits: true
-    dynamicUrl: true
-    changeMasterInfoApi: true
-  markdown:wdigrk: {}
-  better-custom-welcome-message:6fn3hj:
-    custom_welcome_messages:
-      - '{at}欢迎{user}  {avatar}加入{group}家庭，file://E:\新建文件夹 当前群组人数{group_count}'
-      - '{at}哇! 又有新的成员{user} {avater}加入了 #{group}家庭 file://E:\新建文件夹 \我怎么知道.JPG'
-    custom_leave_messages:
-      - 呜呜~~ {user} {avater}离开了家庭 当前群组人数{group_count}
-  crazy-thursday:ed7adk: {}
-  roulette:tkr33m: {}
-  ~chatluna:jluc9p:
-    defaultModel: azure/eringai
-    defaultPreset: 星野
-    botName: 星野
-    isReplyWithAt: true
-    privateChatWithoutCommand: false
-    messageCount: 38
-    randomReplyFrequency: 0.06
-    errorTemplate: 呜呜 ，星野反应不过来了，请联系2338680148以寻求帮助吧
-  ~novelai:hyhl0h:
-    type: sd-webui
-    endpoint: https://sd2.eryc-niceone.cn:30443/
-    model: CharHelper
-    scale: 30
-    textSteps: 20
-    maxWords: 30
-    maxResolution: 512
-    imageSteps: 20
-    maxSteps: 20
-    sampler: k_dpmpp_2m_ka
-    upscaler: None
     features:
       upscale: false
       image: false
     hiresFix: true
   jryspro:k12juq:
     nightauto: false
-    imgApi: E:\ba\
-    subimgApi: E:\ba\
+    imgApi: 
+    subimgApi:
     waiting: false
   silk:zsbhv4: {}
   ffmpeg:jfosna: {}
   downloads:i3936k: {}
-  maimai:atldj0:
-    lxns:
-      token: kXo0cS0KqGpZcDO0PwCxH7R8wPad79ll1XB8rFOOmIE
-    quester:
-      keepAlive: true
-    divingFish:
-      token: FXiA4ONnUdehcMg6WlkBR9HTo0tfPxaj
-    preferred: df
-  mc-server-status:j5yia7:
-    IP: itdct.com:9097
-    footer: |-
-      Powerd By HongXingOS4
-      延迟可能有所偏差，该计算通过Azure。
-prefix:
-  - ''
-  - /
