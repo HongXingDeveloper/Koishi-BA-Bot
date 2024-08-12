@@ -1,7 +1,3 @@
-# Koishi 模板仓库
-
-本仓库包含了 Koishi 的模板项目。
-
-## 使用教程
-
-<https://koishi.chat/manual/starter/boilerplate.html>
+Koishi BA Bot机器人已开源
+直接启用#新建文件夹.bat#
+目前处于开发阶段
