@@ -73,32 +73,8 @@ plugins:
     database-sqlite:dd11hp:
       path: data/koishi.db
     assets-local:slwdqk: {}
-  group:adapter:
-    adapter-qq:c312vz:
-      id: '102132149'
-      token: XFiQ2Le4GZbCyG5D6SbDerhTt20v9A8U
-      type: private
-      secret: wneVMD5xphZRJC5yrkdWQKE82wqlgbWR
-      intents:
-        - DIRECT_MESSAGES
-        - USER_MESSAGE
-        - MESSAGE_AUDIT
-        - PUBLIC_GUILD_MESSAGES
-  group:develop:
-    $if: env.NODE_ENV === 'development'
-    hmr:rys16w:
-      root: .
-  adapter-onebot:zogb59:
-    selfId: '568210745'
-    token: zhouyinqi753303
   puppeteer:locshl:
     ignoreHTTPSErrors: true
-  feedback:kpna86:
-    receivers:
-      - platform: onebot
-        selfId: '568210745'
-        channelId: '904477735'
-        guildId: '904477735'
   '@ifrank/xibao:jx8y49': {}
   ba-plugin:buxwpt:
     plugin_config:
